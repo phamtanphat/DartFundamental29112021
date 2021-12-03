@@ -20,5 +20,13 @@ void main(List<String> args) {
     print(data.runtimeType.toString());
     data = 200;
     print(data.runtimeType.toString());
+
+   2 : String buffer
+
+    StringBuffer stringBuffer = StringBuffer();
+    stringBuffer.writeln("My name's phat");
+    stringBuffer.writeln("I'm 28 age");
+    stringBuffer.writeln("I live at HCM Citty");
+    print(stringBuffer);
    */
 }
