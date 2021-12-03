@@ -28,5 +28,14 @@ void main(List<String> args) {
     stringBuffer.writeln("I'm 28 age");
     stringBuffer.writeln("I live at HCM Citty");
     print(stringBuffer);
+
+   3 : String interpolation
+
+   String name = "Nguyễn Văn Tèo";
+   int age = 5;
+
+   String info = "Name : $name , age : ${age + 1}";
+   print(info);
    */
+
 }
