@@ -194,12 +194,27 @@ void main(List<String> args) {
   // 60
   // ...
   // 150
-  List<int> arr1 = [1, 2, 3];
-  List<int> arr2 = [10, 20, 30, 40, 50];
+  // List<int> arr1 = [1, 2, 3];
+  // List<int> arr2 = [10, 20, 30, 40, 50];
+  //
+  // for (int i = 0; i < arr2.length; i++) {
+  //   for (int j = 0; j < arr1.length; j++) {
+  //     print('${arr2[i] * arr1[j]}');
+  //   }
+  // }
 
-  for (int i = 0; i < arr2.length; i++) {
-    for (int j = 0; j < arr1.length; j++) {
-      print('${arr2[i] * arr1[j]}');
+  // bai 5 :
+  // n = 2 (số lượng phần tử sẽ xóa ở cuối)
+  // mảng [2 , 3 ,4 ,5]
+  List<int> arrNumbers = [2, 3, 4, 5];
+  int n = 2;
+
+  int count = 0;
+  for (int i = arrNumbers.length - 1; i >= 0; i--) {
+    if (count < n ) {
+      arrNumbers.removeAt(i);
+      count++;
     }
   }
+  print(arrNumbers);
 }
