@@ -132,21 +132,56 @@ void main(List<String> args) {
   // print(ketQua);
 
   // 7 : switch case
-  int month = 2;
-
+  // int month = 2;
+  //
   // 1 quý : 3 tháng
-  switch(month){
-    case 1 :
-    case 2 :
-    case 3 :
-      print("Quý 1");
-      break;
-    case 4 :
-      print("Quý 2");
-      break;
-    case 7 :
-      print("Quý 3");
-      break;
-  }
+  // switch(month){
+  //   case 1 :
+  //   case 2 :
+  //   case 3 :
+  //     print("Quý 1");
+  //     break;
+  //   case 4 :
+  //     print("Quý 2");
+  //     break;
+  //   case 7 :
+  //     print("Quý 3");
+  //     break;
+  // }
 
+  // 8 : Mảng
+  // List, set , map
+
+  List<String> listNames = ["tèo","tý","tủn"];
+  // Kích thước
+  // print('Size ${listNames.length}');
+  // // cập nhật phần tử
+  // listNames[0] = "tuấn";
+  // // thêm dữ liệu
+  // listNames.add("Hoa");
+  // // xóa dữ liệu
+  // listNames.removeAt(listNames.length - 1);
+  // // Lấy dữ liệu
+  // print(listNames[listNames.length - 1]);
+
+  // 9 :  vòng lặp for
+
+  //  bài 1 : dùng vòng lặp chạy từ 1 - 100 in ra số chẳn
+  // for(int i = 1 ; i <= 100 ; i++){
+  //   if(i.isEven){
+  //     print(i);
+  //   }
+  // }
+  //  bài 2 : dùng vòng lặp chạy từ 1 - 100 in ra số lẻ
+  // for(int i = 1 ; i <= 100 ; i++){
+  //   if(i.isOdd){
+  //     print(i);
+  //   }
+  // }
+  //  bài 3 : dùng vòng lặp chạy từ 1 - 100 in ra số chia 3 dư 1
+  for(int i = 1 ; i <= 100 ; i++){
+    if(i % 3 == 1){
+      print(i);
+    }
+  }
 }
