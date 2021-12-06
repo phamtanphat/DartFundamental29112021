@@ -206,15 +206,23 @@ void main(List<String> args) {
   // bai 5 :
   // n = 2 (số lượng phần tử sẽ xóa ở cuối)
   // mảng [2 , 3 ,4 ,5]
-  List<int> arrNumbers = [2, 3, 4, 5];
-  int n = 2;
+  // List<int> arrNumbers = [2, 3, 4, 5];
+  // int n = 2;
+  //
+  // int count = 0;
+  // for (int i = arrNumbers.length - 1; i >= 0; i--) {
+  //   if (count < n ) {
+  //     arrNumbers.removeAt(i);
+  //     count++;
+  //   }
+  // }
+  // print(arrNumbers);
 
-  int count = 0;
-  for (int i = arrNumbers.length - 1; i >= 0; i--) {
-    if (count < n ) {
-      arrNumbers.removeAt(i);
-      count++;
-    }
+  Set<int> setData = {1,1,2,2};
+
+  var it = setData.iterator;
+  while (it.moveNext()) {
+    print(it.current);
   }
-  print(arrNumbers);
+
 }
