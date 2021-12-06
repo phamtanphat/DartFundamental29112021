@@ -1,5 +1,3 @@
-
-
 void main(List<String> args) {
   /*
     1 : Kiểu dữ liệu và khai báo biến
@@ -152,7 +150,7 @@ void main(List<String> args) {
   // 8 : Mảng
   // List, set , map
 
-  List<String> listNames = ["tèo","tý","tủn"];
+  List<String> listNames = ["tèo", "tý", "tủn"];
   // Kích thước
   // print('Size ${listNames.length}');
   // // cập nhật phần tử
@@ -179,9 +177,29 @@ void main(List<String> args) {
   //   }
   // }
   //  bài 3 : dùng vòng lặp chạy từ 1 - 100 in ra số chia 3 dư 1
-  for(int i = 1 ; i <= 100 ; i++){
-    if(i % 3 == 1){
-      print(i);
+  // for(int i = 1 ; i <= 100 ; i++){
+  //   if(i % 3 == 1){
+  //     print(i);
+  //   }
+  // }
+  // bài 4 :
+  // - in ngược mảng 1 và 2
+
+  // - in theo mẫu sau
+  // 10
+  // 20
+  // 30
+  // 20
+  // 40
+  // 60
+  // ...
+  // 150
+  List<int> arr1 = [1, 2, 3];
+  List<int> arr2 = [10, 20, 30, 40, 50];
+
+  for (int i = 0; i < arr2.length; i++) {
+    for (int j = 0; j < arr1.length; j++) {
+      print('${arr2[i] * arr1[j]}');
     }
   }
 }
