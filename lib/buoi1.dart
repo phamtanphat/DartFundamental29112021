@@ -1,3 +1,5 @@
+
+
 void main(List<String> args) {
   /*
     1 : Kiểu dữ liệu và khai báo biến
@@ -88,11 +90,10 @@ void main(List<String> args) {
   // print("a : $a");
   // print("b : $b");
 
-
-  int a = 10;
-  int b = 5;
-
-  int ketQua = a-- - --b - --a - b-- - --b + a++ - a-- + a--;
+  // int a = 10;
+  // int b = 5;
+  //
+  // int ketQua = a-- - --b - --a - b-- - --b + a++ - a-- + a--;
   // 10 - --b - --a - b-- - --b + a++ - a-- + a--; a = 9 , b = 5
   // 10 - 4 - --a - b-- - --b + a++ - a-- + a--; a = 9 , b = 4
   // 10 - 4 - 8 - b-- - --b + a++ - a-- + a--; a = 8 , b = 4
@@ -103,10 +104,49 @@ void main(List<String> args) {
   // 10 - 4 - 8 - 4 - 2 + 8 - 9 + 8; a = 7 , b = 2
   // 10 - 4 - 8 - 4 - 2 + 8 - 9 + 8; a = 7 , b = 2
   // -1 , a = 7 , b =2
-  print("Kết quả = $ketQua");
-  print("a = $a");
-  print("b = $b");
+  // print("Kết quả = $ketQua");
+  // print("a = $a");
+  // print("b = $b");
 
+  // null chỉ dùng object
 
+  // 6 : Câu điều kiện if else
+
+  // String a = "5";
+  // int b = 10;
+  //
+  // if (a is int){
+  //   print("A là kiểu int");
+  // }else{
+  //   print("A là không phải là kiểu int");
+  // }
+
+  // int a = 5;
+  // bool text = a as bool; // chưa chắc được
+  // print(text);
+
+  // var a = 5;
+  // print(a % 3);
+  // print(a.runtimeType);
+  // int ketQua = a ~/ 3;
+  // print(ketQua);
+
+  // 7 : switch case
+  int month = 2;
+
+  // 1 quý : 3 tháng
+  switch(month){
+    case 1 :
+    case 2 :
+    case 3 :
+      print("Quý 1");
+      break;
+    case 4 :
+      print("Quý 2");
+      break;
+    case 7 :
+      print("Quý 3");
+      break;
+  }
 
 }
