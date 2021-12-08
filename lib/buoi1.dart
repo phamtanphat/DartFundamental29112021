@@ -235,7 +235,8 @@ void main(List<String> args) {
    showMessage("Hello");
 
   showError(age: 5 , name: "Nguyễn Văn tèo");
-   */
+
+  Handle error
 
   int a = 5;
   int b = 0;
@@ -252,6 +253,9 @@ void main(List<String> args) {
   }
 
   print("Tiếp tục");
+   */
+
+
 
 }
 
