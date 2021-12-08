@@ -237,6 +237,21 @@ void main(List<String> args) {
   showError(age: 5 , name: "Nguyễn Văn tèo");
    */
 
+  int a = 5;
+  int b = 0;
+
+  try{
+    int ketQua = a ~/ b;
+    var c = 5;
+    bool d = c as bool;
+    print(d);
+  } on IntegerDivisionByZeroException catch (integerError) {
+    print(integerError.toString() + " lỗi integer");
+  }catch(e){
+    print(e);
+  }
+
+  print("Tiếp tục");
 
 }
 
