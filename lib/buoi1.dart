@@ -1,4 +1,4 @@
-import 'dart:collection';
+
 
 void main(List<String> args) {
   /*
@@ -231,6 +231,21 @@ void main(List<String> args) {
 
   dynamic a;
   assert(a != null,'A là null');
+
+   showMessage("Hello");
+
+  showError(age: 5 , name: "Nguyễn Văn tèo");
    */
 
+
 }
+
+// truyền theo vị trí = []
+// void showMessage([String message = 'AAA', String name = "tèo"]){
+//   print("$name $message");
+// }
+//
+// // truyền theo name : {}
+// void showError({String name = "" , int age = 0}){
+//   print("$name $age");
+// }
