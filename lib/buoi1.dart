@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 void main(List<String> args) {
   /*
     1 : Kiểu dữ liệu và khai báo biến
@@ -62,161 +64,159 @@ void main(List<String> args) {
   5 : Toán tử
 
 
-   */
+  int a = 5;
+  int b = 5;
 
-  // int a = 5;
-  // int b = 5;
+  xử lý 2 vấn đề
 
-  // xử lý 2 vấn đề
+  Th1 : ++a
+  1 : a = a + 1; // 6
+  2 : b = a // 6
 
-  // Th1 : ++a
-  // 1 : a = a + 1; // 6
-  // 2 : b = a // 6
+  Th2 : a++
+  1 : b = a // 5
+  2 : a = a + 1; // 6
 
-  // Th2 : a++
-  // 1 : b = a // 5
-  // 2 : a = a + 1; // 6
+  int ketQua = a++ - b-- + --b - --a + a--;
+  5 - b-- + --b - --a + a--; a = 6 , b = 5
+  5 - 5 + --b - --a + a--; a = 6 , b = 4
+  5 - 5 + 3 - --a + a--; a = 6 , b = 3
+  5 - 5 + 3 - 5 + a--; a = 5 , b = 3
+  5 - 5 + 3 - 5 + 5; a = 4 , b = 3
+  ket qua 3; a = 4 , b = 3
+  print("Kết quả : $ketQua");
+  print("a : $a");
+  print("b : $b");
 
-  // int ketQua = a++ - b-- + --b - --a + a--;
-  // 5 - b-- + --b - --a + a--; a = 6 , b = 5
-  // 5 - 5 + --b - --a + a--; a = 6 , b = 4
-  // 5 - 5 + 3 - --a + a--; a = 6 , b = 3
-  // 5 - 5 + 3 - 5 + a--; a = 5 , b = 3
-  // 5 - 5 + 3 - 5 + 5; a = 4 , b = 3
-  // ket qua 3; a = 4 , b = 3
-  // print("Kết quả : $ketQua");
-  // print("a : $a");
-  // print("b : $b");
+  int a = 10;
+  int b = 5;
 
-  // int a = 10;
-  // int b = 5;
-  //
-  // int ketQua = a-- - --b - --a - b-- - --b + a++ - a-- + a--;
-  // 10 - --b - --a - b-- - --b + a++ - a-- + a--; a = 9 , b = 5
-  // 10 - 4 - --a - b-- - --b + a++ - a-- + a--; a = 9 , b = 4
-  // 10 - 4 - 8 - b-- - --b + a++ - a-- + a--; a = 8 , b = 4
-  // 10 - 4 - 8 - 4 - --b + a++ - a-- + a--; a = 8 , b = 3
-  // 10 - 4 - 8 - 4 - 2 + a++ - a-- + a--; a = 8 , b = 2
-  // 10 - 4 - 8 - 4 - 2 + 8 - a-- + a--; a = 9 , b = 2
-  // 10 - 4 - 8 - 4 - 2 + 8 - 9 + a--; a = 8 , b = 2
-  // 10 - 4 - 8 - 4 - 2 + 8 - 9 + 8; a = 7 , b = 2
-  // 10 - 4 - 8 - 4 - 2 + 8 - 9 + 8; a = 7 , b = 2
-  // -1 , a = 7 , b =2
-  // print("Kết quả = $ketQua");
-  // print("a = $a");
-  // print("b = $b");
+  int ketQua = a-- - --b - --a - b-- - --b + a++ - a-- + a--;
+  10 - --b - --a - b-- - --b + a++ - a-- + a--; a = 9 , b = 5
+  10 - 4 - --a - b-- - --b + a++ - a-- + a--; a = 9 , b = 4
+  10 - 4 - 8 - b-- - --b + a++ - a-- + a--; a = 8 , b = 4
+  10 - 4 - 8 - 4 - --b + a++ - a-- + a--; a = 8 , b = 3
+  10 - 4 - 8 - 4 - 2 + a++ - a-- + a--; a = 8 , b = 2
+  10 - 4 - 8 - 4 - 2 + 8 - a-- + a--; a = 9 , b = 2
+  10 - 4 - 8 - 4 - 2 + 8 - 9 + a--; a = 8 , b = 2
+  10 - 4 - 8 - 4 - 2 + 8 - 9 + 8; a = 7 , b = 2
+  10 - 4 - 8 - 4 - 2 + 8 - 9 + 8; a = 7 , b = 2
+  -1 , a = 7 , b =2
+  print("Kết quả = $ketQua");
+  print("a = $a");
+  print("b = $b");
 
-  // null chỉ dùng object
+  null chỉ dùng object
 
-  // 6 : Câu điều kiện if else
+  6 : Câu điều kiện if else
 
-  // String a = "5";
-  // int b = 10;
-  //
-  // if (a is int){
-  //   print("A là kiểu int");
-  // }else{
-  //   print("A là không phải là kiểu int");
-  // }
+  String a = "5";
+  int b = 10;
 
-  // int a = 5;
-  // bool text = a as bool; // chưa chắc được
-  // print(text);
+  if (a is int){
+    print("A là kiểu int");
+  }else{
+    print("A là không phải là kiểu int");
+  }
 
-  // var a = 5;
-  // print(a % 3);
-  // print(a.runtimeType);
-  // int ketQua = a ~/ 3;
-  // print(ketQua);
+  int a = 5;
+  bool text = a as bool; // chưa chắc được
+  print(text);
 
-  // 7 : switch case
-  // int month = 2;
-  //
-  // 1 quý : 3 tháng
-  // switch(month){
-  //   case 1 :
-  //   case 2 :
-  //   case 3 :
-  //     print("Quý 1");
-  //     break;
-  //   case 4 :
-  //     print("Quý 2");
-  //     break;
-  //   case 7 :
-  //     print("Quý 3");
-  //     break;
-  // }
+  var a = 5;
+  print(a % 3);
+  print(a.runtimeType);
+  int ketQua = a ~/ 3;
+  print(ketQua);
 
-  // 8 : Mảng
-  // List, set , map
+  7 : switch case
+  int month = 2;
+
+  1 quý : 3 tháng
+  switch(month){
+    case 1 :
+    case 2 :
+    case 3 :
+      print("Quý 1");
+      break;
+    case 4 :
+      print("Quý 2");
+      break;
+    case 7 :
+      print("Quý 3");
+      break;
+  }
+
+  8 : Mảng
+  List, set , map
 
   List<String> listNames = ["tèo", "tý", "tủn"];
-  // Kích thước
-  // print('Size ${listNames.length}');
-  // // cập nhật phần tử
-  // listNames[0] = "tuấn";
-  // // thêm dữ liệu
-  // listNames.add("Hoa");
-  // // xóa dữ liệu
-  // listNames.removeAt(listNames.length - 1);
-  // // Lấy dữ liệu
-  // print(listNames[listNames.length - 1]);
+  Kích thước
+  print('Size ${listNames.length}');
+  // cập nhật phần tử
+  listNames[0] = "tuấn";
+  // thêm dữ liệu
+  listNames.add("Hoa");
+  // xóa dữ liệu
+  listNames.removeAt(listNames.length - 1);
+  // Lấy dữ liệu
+  print(listNames[listNames.length - 1]);
 
-  // 9 :  vòng lặp for
+  9 :  vòng lặp for
 
-  //  bài 1 : dùng vòng lặp chạy từ 1 - 100 in ra số chẳn
-  // for(int i = 1 ; i <= 100 ; i++){
-  //   if(i.isEven){
-  //     print(i);
-  //   }
-  // }
-  //  bài 2 : dùng vòng lặp chạy từ 1 - 100 in ra số lẻ
-  // for(int i = 1 ; i <= 100 ; i++){
-  //   if(i.isOdd){
-  //     print(i);
-  //   }
-  // }
-  //  bài 3 : dùng vòng lặp chạy từ 1 - 100 in ra số chia 3 dư 1
-  // for(int i = 1 ; i <= 100 ; i++){
-  //   if(i % 3 == 1){
-  //     print(i);
-  //   }
-  // }
-  // bài 4 :
-  // - in ngược mảng 1 và 2
+   bài 1 : dùng vòng lặp chạy từ 1 - 100 in ra số chẳn
+  for(int i = 1 ; i <= 100 ; i++){
+    if(i.isEven){
+      print(i);
+    }
+  }
+   bài 2 : dùng vòng lặp chạy từ 1 - 100 in ra số lẻ
+  for(int i = 1 ; i <= 100 ; i++){
+    if(i.isOdd){
+      print(i);
+    }
+  }
+   bài 3 : dùng vòng lặp chạy từ 1 - 100 in ra số chia 3 dư 1
+  for(int i = 1 ; i <= 100 ; i++){
+    if(i % 3 == 1){
+      print(i);
+    }
+  }
+  bài 4 :
+  - in ngược mảng 1 và 2
 
-  // - in theo mẫu sau
-  // 10
-  // 20
-  // 30
-  // 20
-  // 40
-  // 60
-  // ...
-  // 150
-  // List<int> arr1 = [1, 2, 3];
-  // List<int> arr2 = [10, 20, 30, 40, 50];
-  //
-  // for (int i = 0; i < arr2.length; i++) {
-  //   for (int j = 0; j < arr1.length; j++) {
-  //     print('${arr2[i] * arr1[j]}');
-  //   }
-  // }
+  - in theo mẫu sau
+  10
+  20
+  30
+  20
+  40
+  60
+  ...
+  150
+  List<int> arr1 = [1, 2, 3];
+  List<int> arr2 = [10, 20, 30, 40, 50];
 
-  // bai 5 :
-  // n = 2 (số lượng phần tử sẽ xóa ở cuối)
-  // mảng [2 , 3 ,4 ,5]
-  // List<int> arrNumbers = [2, 3, 4, 5];
-  // int n = 2;
-  //
-  // int count = 0;
-  // for (int i = arrNumbers.length - 1; i >= 0; i--) {
-  //   if (count < n ) {
-  //     arrNumbers.removeAt(i);
-  //     count++;
-  //   }
-  // }
-  // print(arrNumbers);
+  for (int i = 0; i < arr2.length; i++) {
+    for (int j = 0; j < arr1.length; j++) {
+      print('${arr2[i] * arr1[j]}');
+    }
+  }
+
+  bai 5 :
+  n = 2 (số lượng phần tử sẽ xóa ở cuối)
+  mảng [2 , 3 ,4 ,5]
+  List<int> arrNumbers = [2, 3, 4, 5];
+  int n = 2;
+
+  int count = 0;
+  for (int i = arrNumbers.length - 1; i >= 0; i--) {
+    if (count < n ) {
+      arrNumbers.removeAt(i);
+      count++;
+    }
+  }
+  print(arrNumbers);
 
   Set<int> setData = {1,1,2,2};
 
@@ -224,5 +224,13 @@ void main(List<String> args) {
   while (it.moveNext()) {
     print(it.current);
   }
+
+  Map
+  Map<String,String> map = {'name' : 'Nguyên Văn Tèo'};
+  print(map['name']);
+
+  dynamic a;
+  assert(a != null,'A là null');
+   */
 
 }
