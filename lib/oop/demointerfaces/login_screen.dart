@@ -16,4 +16,9 @@ class LoginScreen implements LoginModule{
     // TODO: implement validateForm
   }
 
+  @override
+  void logout() {
+    // TODO: implement logout
+  }
+
 }
