@@ -1,10 +1,10 @@
-class Person{
+class Person {
   // properties : thuộc tính
   late String _name;
   late int _age;
 
   // phương thức khởi tạo
-  Person(this._name , this._age);
+  Person(this._name, this._age);
 
   int get age => _age;
 
@@ -18,8 +18,11 @@ class Person{
     _name = value;
   }
 
+  @override
+  String toString() {
+    return 'Person{_name: $_name, _age: $_age}';
+  }
+
 // tính đóng gói
-
-
 
 }

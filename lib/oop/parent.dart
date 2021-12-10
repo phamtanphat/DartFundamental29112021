@@ -7,4 +7,8 @@ class Parent extends Person{
   Parent(String name, int age , this.address) : super(name, age);
 
   // tính kế thừa
+@override
+  String toString() {
+  return "abc";
+  }
 }
